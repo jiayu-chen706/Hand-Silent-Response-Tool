@@ -1,0 +1,165 @@
+.reaction {
+  font-size: 2rem;
+  margin-top: 0.125rem;
+  background-color: white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+}
+
+.reaction.active {
+  min-width: 6rem;
+  gap: 0.8rem;
+  border: 2px solid #9b59b6;
+  box-shadow: 0 0 6px rgba(155, 89, 182, 0.4);
+  background-color: #f9f0fc;
+  box-sizing: border-box;
+}
+
+.delete-button {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  filter: grayscale(100%) brightness(70%);
+  cursor: pointer;
+  user-select: none;
+  transition: filter 0.2s, transform 0.1s, opacity 0.1s ease;
+  touch-action: manipulation;
+}
+
+.delete-button:hover,
+.delete-button:active {
+  filter: grayscale(0%) brightness(100%);
+  transform: scale(0.95);
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.inline-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.inline-actions button {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.inline-actions button:hover {
+  background-color: #f0f0f0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  width: 80%;
+  max-width: 500px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3rem;
+}
+
+.modal-textarea {
+  max-width: 100%;
+  height: 6rem;
+  resize: vertical;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.modal-textarea:focus {
+  border: 1px solid #8f6da6; /* change to purple */
+  box-shadow: inset 0 0 0 2px rgba(143, 109, 166, 0.2);
+}
+
+.modal-actions {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.comment-box {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.modal-actions button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.modal-actions button:first-child {
+  background-color: #999797;
+  color: white;
+}
+
+.modal-actions button:first-child:hover {
+  background-color: #e0e0e0;
+}
+
+.modal-actions button:last-child {
+  background-color: #65558F;
+  color: white;
+}
+
+.modal-actions button:last-child:hover {
+  background-color: #884ea0; 
+}
+
+.thumb-status {
+  margin-right: auto; /* push other items to the right */
+  font-size: 1rem;
+  color: #666;
+  padding: 0rem 0.5rem;
+  padding-top: 0.3rem;
+}
+
+.comment-content {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.edited-label {
+  font-size: 0.875rem;
+  color: gray;
+  margin-left: 4px;
+}

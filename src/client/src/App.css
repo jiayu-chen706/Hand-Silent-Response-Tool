@@ -1,0 +1,25 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #d2ccf1; */
+  /* background-color: #f4f1fb; */
+  /* background-color: #f9f8fc; */
+  background-color: #f8f7fb;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Center all text inside the main app container */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

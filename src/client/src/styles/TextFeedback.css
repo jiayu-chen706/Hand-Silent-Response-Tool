@@ -1,0 +1,77 @@
+.text-feedback-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  max-width: 500px;
+  /* padding: 0 1rem; */
+}
+
+.text-feedback-container .comment-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+.text-feedback-container .feedback-textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.2;
+  outline: none;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+}
+
+.text-feedback-container .feedback-textarea:focus {
+  border: 2px solid #8f6da6; /* change to purple */
+  box-shadow: 0 0 0 2px rgba(143, 109, 166, 0.2);
+}
+
+.text-feedback-container .submit-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.text-feedback-container .submit-button {
+  margin-top: 0.75rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #65558F;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  justify-content: flex-end;
+}
+
+.text-feedback-container .submit-button:hover {
+  background-color: #7a5d92;
+}
+
+.text-feedback-container .submitted-feedback-list {
+  margin-top: 1.5rem;
+  /* padding: 0 1rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.text-feedback-container .submitted-feedback-item {
+  background: #f7f7f7;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}

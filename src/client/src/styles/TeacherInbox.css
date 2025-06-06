@@ -1,0 +1,219 @@
+/* Reset-style base */
+.teacher-inbox {
+  background-color: #f8f7fc;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Navigation bar */
+.teacher-inbox .nav-bar {
+  background: linear-gradient(to right, #7b6dc9, #a18bd1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hamburger/Menu icon */
+.teacher-inbox .menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Centered title */
+.teacher-inbox .nav-title.centered {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Filters section */
+.teacher-inbox .filter-section {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: #f0eefb;
+  border-bottom: 1px solid #ded8f5;
+}
+
+.teacher-inbox .filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.teacher-inbox .filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.teacher-inbox .filter-label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #4b4b4b;
+}
+
+.teacher-inbox .filter-select {
+  background-color: #e4dcf7;
+  border: 1px solid #c5b9e4;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.2s ease;
+
+}
+.teacher-inbox .filter-select:focus {
+  outline: none;
+  border-color: #937ae5;
+}
+
+/* Last updated timestamp */
+.teacher-inbox .last-updated {
+  text-align: right;
+  padding: 4px 20px 12px;
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+}
+
+/* Responses list */
+.teacher-inbox .response-list {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Card styling */
+.teacher-inbox .response-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2dff5;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.teacher-inbox .response-card:hover {
+  transform: scale(1.015);
+  background-color: #f6f3fd;
+  box-shadow: 0 6px 12px rgba(155, 143, 223, 0.2);
+}
+
+/* Left: avatar + content */
+.teacher-inbox .avatar-name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.teacher-inbox .avatar-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Text inside response */
+.teacher-inbox .response-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 180px; 
+}
+
+.teacher-inbox .student-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2e2e2e;
+  padding: 12px;
+  margin: 0;
+  text-align: left;
+}
+
+.teacher-inbox .message {
+  font-size: 1rem;
+  color: #5a5a5a;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 12px;
+  margin: 0;
+}
+
+.teacher-inbox .student-name.unread,
+.teacher-inbox .message.unread {
+  font-weight: 700;
+  color: #000;
+}
+
+/* Right: timestamp + unread dot */
+.teacher-inbox .right-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.teacher-inbox .timestamp {
+  font-size: 12px;
+  color: #777;
+}
+
+.teacher-inbox .unread-dot-right {
+  width: 10px;
+  height: 10px;
+  background-color: #e63946;
+  border-radius: 50%;
+}
+
+/* No response text */
+.teacher-inbox .empty-msg {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+/* Optional tags */
+.teacher-inbox .response-tags {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.teacher-inbox .tag-pill {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  color: #555;
+}
+
+.teacher-inbox .subject-pill {
+  background-color: #fff8cc;
+  border-color: #f0e68c;
+  color: #665c00;
+}
+
+.teacher-inbox .class-pill {
+  background-color: #e5e5e5;
+  border-color: #ccc;
+  color: #333;
+}

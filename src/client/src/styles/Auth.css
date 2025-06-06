@@ -1,0 +1,96 @@
+/* Centered container with padding, soft background, shadow, and rounded corners */
+.form-container {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 32px 24px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-container label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+  text-align: left;
+}
+
+/* Input fields: full width, padding, smooth border and transition effects */
+.form-container input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Highlight input fields on focus */
+.form-container input:focus {
+  border-color: #5b4b8a;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(91, 75, 138, 0.2);
+}
+
+/* Submit button: strong color, rounded, hover transition */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background: #5b4b8a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.form-container button:hover {
+  background: #463a6f;
+}
+
+/* Error message: red color and spacing */
+.error {
+  color: #d93025;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Link styling: purple color, underline on hover */
+.link {
+  color: #5b4b8a;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.educator-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 480px) {
+  .form-container {
+    margin: 40px 16px;
+    padding: 24px 18px;
+  }
+
+  .form-container button {
+    font-size: 16px;
+  }
+}
+

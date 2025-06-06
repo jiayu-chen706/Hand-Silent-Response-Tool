@@ -1,0 +1,204 @@
+/* Base Layout */
+.content {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9f8fc;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Card Component */
+.content .card {
+  width: 100%;
+  max-width: 780px;
+  background-color: #f1ebfc;
+  padding: 20px 24px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  margin-top: 15px;
+  box-shadow: 0 4px 16px rgba(93, 68, 136, 0.08);
+  text-align: left;
+  transition: box-shadow 0.2s ease;
+}
+
+.content .card:hover {
+  box-shadow: 0 6px 20px rgba(93, 68, 136, 0.12);
+}
+
+/* User Info Row */
+.content .user-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.content .avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid #cdbef2;
+  object-fit: cover;
+}
+
+.content .username {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2e2e2e;
+  padding: 5px;
+}
+
+.content .timestamp {
+  font-size: 0.875rem;
+  color: #777;
+  padding: 5px;
+}
+
+/* Message + Comment Box */
+.content .message,
+.content .comment-box {
+  background-color: #fff;
+  padding: 14px 16px;
+  margin-top: 10px;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  border-left: 4px solid #a088dc;
+}
+
+/* Feedback Section */
+.content .feedback-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  /* color: #5e4aa7; */
+  margin-bottom: 14px;
+}
+
+.content .label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  margin: 0;
+}
+
+/* Emoji Feedback Box */
+.content .reaction {
+  font-size: 2rem;
+  margin-top: 10px;
+  background-color: white;
+  width: 68px;
+  height: 68px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2d9f3;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+/* Edit/Delete Button Area */
+.content .card-buttons {
+  width: 100%;
+  max-width: 780px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.content .card-buttons button {
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 10px 18px;
+  border: none;
+  background-color: #6c5ba7;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s;
+}
+
+.content .card-buttons button:hover {
+  background-color: #5a4893;
+  transform: translateY(-1px);
+}
+
+.content .like-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.content .like-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #888;
+  transition: color 0.3s ease;
+  /* display: flex; */
+  display: inline-flex;
+}
+
+.content .like-btn:hover {
+  color: #e0245e;
+}
+
+
+/* Timestamp on feedback */
+.content .feedback-timestamp {
+  font-size: 0.82rem;
+  color: #777;
+  padding-top: 4px;
+  text-align: right;
+}
+
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.2rem;
+  margin-top: 1.2rem;
+}
+
+.feedback-selection {
+  display: flex;
+  max-width: 780px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.emoji-button,
+.text-button {
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.emoji-button:hover,
+.text-button:hover {
+  background-color: #f0f0f0;
+}
+
+.content .edited-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.content .response-edited-label {
+  font-size: 0.875rem;
+  color: gray;
+}

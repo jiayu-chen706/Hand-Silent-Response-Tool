@@ -1,0 +1,76 @@
+
+/* Class info box with subtle purple background and rounded corners */
+.class-info {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(101, 85, 143, 0.1);
+  width: 90%;
+  margin: 30px auto;
+}
+
+/* Class name styling */
+.class-info h2 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Teacher name styling */
+.class-info .teacher-name {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Button with modern purple gradient and smooth hover effect */
+.response-button {
+  background: #65558F;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 30px;
+}
+
+/* Button hover effects */
+.response-button:hover {
+  background: linear-gradient(135deg, #4f3781, #7e5fd2);
+  box-shadow: 0 6px 20px rgba(124, 77, 255, 0.7);
+  transform: translateY(-2px);
+}
+
+/* Button active (pressed) effect */
+.response-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(124, 77, 255, 0.3);
+}
+
+.classroom-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+  .class-info h2 {
+    font-size: 1.4rem;
+  }
+  .class-info .teacher-name {
+    font-size: 1rem;
+  }
+  .response-button {
+    max-width: 250px;
+  }
+}
+

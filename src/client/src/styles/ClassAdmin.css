@@ -1,0 +1,122 @@
+.class-admin-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 1em auto;
+  padding: 1.5rem 2rem;
+  /* background-color: #f4f1fb; */
+  border-radius: 12px;
+  /* box-shadow: 0 8px 20px rgba(110, 96, 177, 0.15); */
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.class-admin-container h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  /* color: #5847c1; */
+}
+
+.session-info {
+  margin-bottom: 2rem;
+}
+
+.qr-code {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(88, 71, 193, 0.2);
+  margin-bottom: 0.8rem;
+}
+
+.invite-code {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #6b5dd3;
+}
+
+.invite-code span {
+  background-color: #e2dcff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  user-select: all;
+}
+
+.students-list {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.students-list h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  /* color: #6b5dd3; */
+}
+
+.students-list ul {
+  list-style: none;
+  padding: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.students-list li {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  color: #444;
+}
+
+.students-list li:last-child {
+  border-bottom: none;
+}
+
+.close-session-btn {
+  margin-top: 2rem;
+  background-color: #65558F;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  /* box-shadow: 0 6px 16px rgba(88, 71, 193, 0.4); */
+  transition: background-color 0.3s ease, transform 0.15s ease;
+}
+
+.close-session-btn:hover {
+  opacity: 0.8;
+}
+
+
+/* Styling for the inbox icon */
+.inbox-icon {
+  position: fixed;
+  top: 5rem;
+  right: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 000;
+}
+
+/* Red notification dot that shows when there are new messages */
+.notification-dot {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 50%; 
+  border: 2px solid white; 
+}
+
+.inbox-icon img {
+  width: 3rem;
+  height: auto;
+}
